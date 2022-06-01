@@ -70,4 +70,4 @@ docker-compose -f docker-compose.yml -f docker-compose-dev.yml
 
 ## Production server
 
-docker-compose -f docker-compose.yml -f docker-compose-prod.yml
+docker-compose -f docker-compose.yml -f docker-compose-prod.yml up -d --build
