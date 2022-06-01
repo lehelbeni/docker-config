@@ -1,0 +1,14 @@
+# get the base node image
+FROM node
+# Workpath inside docker
+WORKDIR /app
+# copy the dependency list
+COPY package.json .
+# install node 
+RUN npm install
+# copy all the files optimization
+COPY . . 
+# Expose ports
+EXPOSE 3000
+# 
+CMD ["npm","start"]

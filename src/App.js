@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +17,11 @@ function App() {
         >
           Learn React
         </a>
+
+        <p>
+          <h1>hello my man</h1>
+          <h1>{`${process.env.REACT_APP_NAME}`}</h1>
+        </p>
       </header>
     </div>
   );
